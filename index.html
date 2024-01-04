@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+  <!--Bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <!-- Technology Section Link -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <!-- Css Link -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- Testimonial Section Link -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+
+</head>
+<body>
+  <section class="main" id="main">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg p-0">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="SF-Logo" width="" height="70px" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler collapsed toggle_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
+            <span class="close"><img src="images/Close.png" alt="close"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-4 me-4 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tee-time-booking.html">Tee time Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="driving-range.html"> Simulators</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Membership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <div class="register-button mb-2 mb-lg-0 ">
+              <button onclick="window.location.href = 'register.html';" class="btn register-btn">Register</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </section>
+  
+  <!-- Hero Section  -->
+  <section class="Hero-section">
+    <div class="banner" style="width: 100%;">
+      <img src="images/Hero-section Image.png" class="banner-image" alt="Hero-section-banner" style="height:100%; width:100%;">
+      <div class="banner-inner"></div>
+    </div>
+    <div class="banner-items">
+      <div class="container">
+        <div class="banner-item">
+          <div class="banner-title">
+            <h1>Book your round of golf online 24/7 </h1>
+            <!-- <h1></h1> -->
+          </div>
+          <div class="banner-para">
+            <p>Straightforward. Fast & Easy.</p>
+          </div>
+          <div class="banner-search">
+            <form>
+              <select>
+                <option value="" disabeled selected>Select Simulator</option>
+                <option value="driving range">Driving Range</option>
+                <option value="premium bay">Premium Bay</option>
+                <option value="luxury suite">Luxury Suite</option>
+              </select>
+              <input type="date" placeholder="Select Date"
+                onchange="this.className=(this.value!=''?'date-has-value':'')"></input>
+              <button class="btn  Search" type="submit"><img src="images/search.png" alt="search"></button>
+            </form>
+          </div>
+          <div class="banner-plr">
+            <div class="banner-plr-items">
+              <div class="plr-item">
+                <div class="plr-image">
+                  <img src="images/joystick.png" alt="joystick">
+                </div>
+                <div class="plr-content">
+                  <h6>800+</h6>
+                  <p>plays per <br>month</p>
+                </div>
+              </div>
+              <div class="plr-item">
+                <div class="plr-image">
+                  <img src="images/location-pointer.png" alt="location-pointer">
+                </div>
+                <div class="plr-content">
+                  <h6>2+</h6>
+                  <p>Location & <br>Counting</p>
+                </div>
+              </div>
+              <div class="plr-item">
+                <div class="plr-image">
+                  <img src="images/star.png" alt="star">
+                </div>
+                <div class="plr-content">
+                  <h6>4.9/5</h6>
+                  <p>AVG REVIEW <br> RATING</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Simulator Section -->
+  <section class="simulator-section">
+    <div class="container">
+      <div class="simulator-intro">
+        <div class="simulator-heading">
+          <h1>Simulators</h1>
+        </div>
+        <div class="simulator-content">
+          <p>Smash Factor Lounge offers three types of <br> simulator experience:</p>
+        </div>
+      </div>
+      <div class="simulators">
+        <div class="simulator">
+          <div class="simulator-image-div">
+            <img src="images/driving range.png" alt="drivingrange" class="simulator-image">
+          </div>
+          <div class="simulator-content-div">
+            <div class="sim-heading">
+              <h1>Driving Range</h1>
+            </div>
+            <div class="sim-para">
+              <p>Designed for golfer’s improvement, our range features Golfzon’s Driving Range Simulator, or GDR for
+                short. The GDR simulator features a high-resolution dual camera sensor system which recognizes ball
+                launch data such as speed, angle direction, and back/side spin rate.</p>
+            </div>
+            <div>
+              <button  onclick="window.location.href = 'Driving-range/driving-range.html';" type="button" class="learnmore_btn ">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="simulator-1">
+          <div class="simulator-content-div">
+            <div class="sim-heading">
+              <h1>Premium Bay</h1>
+            </div>
+            <div class="sim-para">
+              <p>Is an individually located, somewhat private simulator which features Golfzon’s Vision Premium
+                Simulator. The Vision Premium offer’s Golfzon’s vision software which virtually transports you to over
+                190 golf courses around the world.</p>
+            </div>
+            <div>
+              <button  onclick="window.location.href = 'Driving-range/driving-range.html#semi-private';" type="button" class="learnmore_btn ">Learn More</button>
+            </div>
+          </div>
+          <div class="simulator-image-div-1">
+            <img src="images/premium_bay.png" alt="drivingrange" class="simulator-image-1">
+          </div>
+        </div>
+        <div class="simulator">
+          <div class="simulator-image-div">
+            <img src="images/lux-img.png" alt="drivingrange" class="simulator-image">
+          </div>
+          <div class="simulator-content-div">
+            <div class="sim-heading">
+              <h1>Luxury Suite</h1>
+            </div>
+            <div class="sim-para">
+              <p>This fully private, luxury suite features the best simulator money can buy. Golfzon’s Two Vision
+                simulator offers everything the Vision Premium has, and more!</p>
+            </div>
+            <div>
+              <button  onclick="window.location.href = 'Driving-range/driving-range.html#luxury';" type="button" class="learnmore_btn ">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section class="section-technology-section">
+    <div class="container">
+      <div class="tech-intro">
+        <div class="tech-heading">
+          <h1>Technology Used</h1>
+        </div>
+        <div class="tech-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse<br> vitae ante a dolor Lorem ipsum
+            dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slider-container js-flickity" data-flickity-options='{ "wrapAround": true }'>
+        <div class="slider-card-home">
+          <img src="images/slider-img-1.png">
+          <div class="slider-item">
+            <!-- <h2>Lorem</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable.</p>-->
+          </div>
+        </div>
+        <div class="slider-card-home">
+          <img src="images/slider-img-2.png">
+          <div class="slider-item">
+             <!-- <h2>Lorem</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable.</p>-->
+          </div>
+        </div>
+        <div class="slider-card-home">
+          <img src="images/slider-img-3.png">
+          <div class="slider-item">
+            <!-- <h2>Lorem</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable.</p>-->
+          </div>
+        </div>
+        <div class="slider-card-home">
+          <img src="images/slider-img-4.png">
+          <div class="slider-item">
+            <!-- <h2>Lorem</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable.</p>-->
+          </div>
+        </div>
+        <div class="slider-card-home">
+          <img src="images/slider-img-5.png">
+          <div class="slider-item">
+           <!-- <h2>Lorem</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+              alteration in some form, by injected humour, or randomised words which don't look even slightly
+              believable.</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-indicator">
+      <input id="slider-indicator-1" type="radio" class="slider-indicator-item active" name="slider-indicator"
+        value="0">
+      <label for="slider-indicator-1">01</label>
+      <input id="slider-indicator-2" type="radio" class="slider-indicator-item" name="slider-indicator" value="1">
+      <label for="slider-indicator-2">02</label>
+      <input id="slider-indicator-3" type="radio" class="slider-indicator-item" name="slider-indicator" value="2">
+      <label for="slider-indicator-3">03</label>
+      <input id="slider-indicator-4" type="radio" class="slider-indicator-item" name="slider-indicator" value="3">
+      <label for="slider-indicator-4">04</label>
+      <input id="slider-indicator-5" type="radio" class="slider-indicator-item" name="slider-indicator" value="4">
+      <label for="slider-indicator-5">05</label>
+    </div>
+    </div>
+  </section>
+
+  <!-- Testimonial section -->
+  <div class="container test-content">
+    <div class="testimonial">
+      <div class="testimonial-container owl-carousel owl-theme">
+        <div class="testimonial-item">
+          <img src="images/person_image.png">
+          <div class="testimonial-item-content">
+            <h4>Harriet Mitchell</h4>
+            <p>(Junior Engineer)</p>
+            <div class="quotes">
+              <img src="images/apostrape-up.png" class="one">
+              <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been
+                the industry's standard dummy text ever </blockquote>
+              <span class="down-class">
+                <img src="images/apostraphe-down.png">
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://picsum.photos/300/300/?random&2">
+          <div class="testimonial-item-content">
+            <h4>Name 2</h4>
+            <p>(UI Developer)</p>
+            <img src="images/apostrape-up.png" class="one">
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been
+              the industry's standard dummy text ever </blockquote>
+            <span class="down-class">
+              <img src="images/apostraphe-down.png">
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://picsum.photos/300/300/?random&3">
+          <div class="testimonial-item-content">
+            <h4>Name 3</h4>
+            <p>(Backend Developer)</p>
+            <img src="images/apostrape-up.png" class="one">
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been
+              the industry's standard dummy text ever</blockquote>
+            <span class="down-class">
+              <img src="images/apostraphe-down.png">
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://picsum.photos/300/300/?random&1">
+          <div class="testimonial-item-content">
+            <h4>Name 4</h4>
+            <p>(Frontend Developer)</p>
+            <img src="images/apostrape-up.png" class="one">
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been
+              the industry's standard dummy text ever</blockquote>
+            <span class="down-class">
+              <img src="images/apostraphe-down.png">
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://picsum.photos/300/300/?random&5">
+          <div class="testimonial-item-content">
+            <h4>Name 5</h4>
+            <p>(Fullstack Developer)</p>
+            <img src="images/apostrape-up.png" class="one">
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been
+              the industry's standard dummy text ever</blockquote>
+            <span class="down-class">
+              <img src="images/apostraphe-down.png">
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://picsum.photos/300/300/?random&6">
+          <div class="testimonial-item-content">
+            <h4>Name 6</h4>
+            <p>(Blockchain Developer)</p>
+            <img src="images/apostrape-up.png" class="one">
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting <br>industry. Lorem Ipsum has been
+              the industry's standard dummy text ever</blockquote>
+            <span class="down-class">
+              <img src="images/apostraphe-down.png">
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://picsum.photos/300/300/?random&7">
+          <div class="testimonial-item-content">
+            <h4>Name 7</h4>
+            <p>(CRM Developer)</p>
+            <img src="images/apostrape-up.png" class="one">
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been
+              the industry's standard dummy text ever</blockquote>
+            <span class="down-class">
+              <img src="images/apostraphe-down.png">
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://picsum.photos/300/300/?random&8">
+          <div class="testimonial-item-content">
+            <h4>Name 8</h4>
+            <p>(Game Developer)</p>
+            <img src="images/apostrape-up.png" class="one">
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been
+              the industry's standard dummy text ever</blockquote>
+            <span class="down-class">
+              <img src="images/apostraphe-down.png">
+            </span>
+          </div>
+        </div>
+        <div class="testimonial-item">
+          <img src="https://picsum.photos/300/300/?random&9">
+          <div class="testimonial-item-content">
+            <h4>Name 9</h4>
+            <p>(Graphics Designer)</p>
+            <img src="images/apostrape-up.png" class="one">
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. Lorem Ipsum has been
+              the industry's standard dummy text ever</blockquote>
+            <span class="down-class">
+              <img src="images/apostraphe-down.png">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Banner -->
+  <section class="bottom-banner-section mt-5">
+    <div class="bottom-banner-image">
+      <div class="bottom_banner-content">
+        <h1>You want to know more about us? <br>Feel free to reach out!</h1>
+        <button class="btnarrow">Connect now </button>
+      </div>
+      <div class="bottom-banner">
+        <img src="images/bottom-banner.png" alt="bottom_banner" class="image_banner">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <section>
+    <footer class="footer">
+      <div class="container pt-0">
+        <div class="row gx-5">
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-0 footer-logo">
+            <div class="p-0 site-logo">
+              <img class="img-fluid" src="images/Footer-logo.png" alt="footer-logo">
+            </div>
+          </div>
+          <div class="col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-1">
+            <div class="quicklinks mb-3">
+              <h6 class=" footer-heading">QUICK LINKS</h6>
+            </div>
+            <div class=" footer-list">
+              <ul>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Escape Rooms</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Gift Cards</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="  col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-2">
+            <div class="events mb-3">
+              <h6 class="text-uppercase footer-heading">Events</h6>
+            </div>
+            <div class="footer-list private-party-desktop">
+              <ul>
+                <li><a href="#">Birthday Party</a></li>
+                <li><a href="#">Bar Mitzvah Party</a></li>
+                <li><a href="#">Team Building</a></li>
+                <li><a href="#">Private Party</a></li>
+              </ul>
+            </div>
+            <div class="footer-list private-party-mobile">
+                <div class="row">
+                    <div class="col-6">
+                        <p><a href="#">Birthday Party</a></p>
+                        <p><a href="#">Bar Mitzvah Party</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p><a href="#">Team Building</a></p>
+                        <p><a href="#">Private Party</a></p>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="  col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-3">
+            <div class="follow mb-3">
+              <h6 class="text-uppercase footer-heading">Follow us</h6>
+            </div>
+            <div class="footer-list">
+              <ul>
+                <li><span class="pe-4"><img src="images/fb-logo.png" alt="fb-logo"></span><a href="#">Facebook</a></li>
+                <li><span class="pe-4"><img src="images/Instagram svg.png" alt="Insta-logo"></span><a
+                    href="#">Instagram</a></li>
+                <li><span class="pe-4"><img src="images/youtube-logo.png" alt="youtube-logo"></span><a
+                    href="#">Youtube</a></li>
+                <li><span class="pe-4"><img src="images/Twitter  svg.png" alt="Twitter-logo"></span><a
+                    href="#">Twitter</a></li>
+                <li><span class="pe-4"><img src="images/LinkedIn svg.png" alt="Linkedin-logo"></span><a
+                    href="#">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row pb-4 copyright">
+          <div class="col-xl-6 col-lg-6 col-md-12 order-lg-1">
+            <p class="float-lg-end copyright_para ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 order-lg-0">
+            <p class="copyright_name">© SMASH FACTOR </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- JS Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+  
+  <!-- Testimonial Section Link -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

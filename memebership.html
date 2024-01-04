@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/memebership.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Membership</title>
+</head>
+
+<body>
+    <!-- Nav Bar Section -->
+    <section class="main" id="main">
+        <header class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg p-0">
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="SF-Logo" width=""
+                            height="70px" class="d-inline-block align-text-top"></a>
+                    <button class="navbar-toggler collapsed toggle_button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
+                        <span class="close"><img src="images/Close.png" alt="close"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-4 me-4 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tee-time-booking/index.html">Tee time Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Driving-range/driving-range.html"> Simulators</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"> Membership</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                        </ul>
+                        <div class="register-button mb-2 mb-lg-0 ">
+                            <button class="btn register-btn">Register</button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <!-- Content section -->
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="memebership-card">
+                <h3 class="main-heading-memebership">Explore our plans for membership.</h3>
+
+                <div class="switch-wrapper">
+                    <input id="monthly" type="radio" name="switch" checked>
+                    <input id="yearly" type="radio" name="switch">
+                    <label for="monthly">Monthly</label>
+                    <label for="yearly">Yearly</label>
+                    <span class="highlighter"></span>
+                </div>
+                <div class="carousel slide multi-item-carousel" id="theCarousel" data-interval="false"
+                    data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+
+                            <div class="card-container col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 col-12">
+
+                                <div class=" card1">
+                                    <div class="card-icon">
+                                        <img src="images/green-tick.png" alt="standard-icon">
+                                    </div>
+                                    <h3 class="card-heading">Standard Membership</h3>
+                                    <div>
+                                        <h2 class="card-amount">
+                                            <div class="price monthly">
+                                                <div class="amount">$125 /<span>month</span></div>
+                                            </div>
+                                            <div class="price yearly hide">
+                                                <div class="amount">$1250 /<span>year</span></div>
+                                        </h2>
+                                    </div>
+                                    <div class="card-list">
+                                        <p>Membership pricing for SFR and Premium Bay</p>
+                                        <ul>
+                                            <li>
+                                                <p>Access to the facility and free use of SFR and Premium Bay</p>
+                                            </li>
+                                            <li>
+                                                <p>Must book a tee time</p>
+                                            </li>
+                                            <li>
+                                                <p>No guests after-hours</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-btn">
+                                        <button type="button" class="membership-button">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-container col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 col-12">
+                                <div class=" card1">
+                                    <div class="card-icon">
+                                        <img src="images/family-icon.png" alt="family-icon">
+                                    </div>
+                                    <h3 class="card-heading">Family Membership</h3>
+                                    <div>
+                                        <h2 class="card-amount">
+                                            <div class="price monthly">
+                                                <div class="amount">$150 / <span>month</span></div>
+                                            </div>
+                                            <div class="price yearly hide">
+                                                <div class="amount">$1500 /<span>year</span></div>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <div class="card-list">
+                                        <p>Family members must be from same household (per CDL)</p>
+                                        <ul>
+                                            <li>
+                                                <p>Membership pricing for SFR and Premium Bay</p>
+                                            </li>
+                                            <li>
+                                                <p>Access to the facility and free use of SFR and Premium Bay</p>
+                                            </li>
+                                            <li>
+                                                <p>Must book a tee time</p>
+                                            </li>
+                                            <li>
+                                                <p>No guests after-hours unless covered under family
+                                                    membership</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-btn">
+                                        <button type="button" class="membership-button">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-container col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 col-12">
+                                <div class=" card1">
+                                    <div class="card-icon">
+                                        <img src="images/icon3.png" alt="corporate-icon">
+
+                                    </div>
+                                    <h3 class="card-heading">Corporate Membership</h3>
+                                    <div>
+                                        <h2 class="card-amount">
+                                            <div class="price monthly">
+                                                <div class="amount">$500 /<span>month</span></div>
+                                            </div>
+                                            <div class="price yearly hide">
+                                                <div class="amount">$5000 /<span>year</span></div>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <div class="card-list">
+                                        <p>Cost $500 per month or $5,000 per year if paid up front</p>
+                                        <ul>
+                                            <li>
+                                                <p>3 Free hours of Luxury Suite rental per month</p>
+                                            </li>
+                                            <li>
+                                                <p>Member only pricing on Luxury Suite rental for additional hours</p>
+                                            </li>
+                                            <li>
+                                                <p>Member only pricing for corporate events/full lease out</p>
+                                            </li>
+                                            <li>
+                                                <p>One standard membership per company</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="card-btn">
+                                        <button type="button" class="membership-button">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i
+                            class="glyphicon glyphicon-chevron-left"></i></a>
+                    <a class="right carousel-control" href="#theCarousel" data-slide="next"><i
+                            class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Footer section -->
+    <section>
+        <footer class="footer">
+            <div class="container pt-0">
+                <div class="row gx-5">
+                    <div class="col-xl-3 col-lg-3 col-md-6 mt-0 footer-logo">
+                        <div class="p-0 site-logo">
+                            <img class="img-fluid" src="images/Footer-logo.png" alt="footer-logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-1">
+                        <div class="quicklinks mb-3">
+                            <h6 class=" footer-heading">QUICK LINKS</h6>
+                        </div>
+                        <div class=" footer-list">
+                            <ul>
+                                <li><a href="#">Locations</a></li>
+                                <li><a href="#">Games</a></li>
+                                <li><a href="#">Escape Rooms</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Gift Cards</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="  col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-2">
+                        <div class="events mb-3">
+                            <h6 class="text-uppercase footer-heading">Events</h6>
+                        </div>
+                        <div class="footer-list private-party-desktop">
+                            <ul>
+                                <li><a href="#">Birthday Party</a></li>
+                                <li><a href="#">Bar Mitzvah Party</a></li>
+                                <li><a href="#">Team Building</a></li>
+                                <li><a href="#">Private Party</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-list private-party-mobile">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p><a href="#">Birthday Party</a></p>
+                                    <p><a href="#">Bar Mitzvah Party</a></p>
+                                </div>
+                                <div class="col-4">
+                                    <p><a href="#">Team Building</a></p>
+                                    <p><a href="#">Private Party</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-3">
+                        <div class="follow mb-3">
+                            <h6 class="text-uppercase footer-heading">Follow us</h6>
+                        </div>
+                        <div class="footer-list">
+                            <ul>
+                                <li><span class="pe-4"><img src="images/fb-logo.png" alt="fb-logo"></span><a
+                                        href="#">Facebook</a></li>
+                                <li><span class="pe-4"><img src="images/Instagram svg.png" alt="Insta-logo"></span><a
+                                        href="#">Instagram</a></li>
+                                <li><span class="pe-4"><img src="images/youtube-logo.png" alt="youtube-logo"></span><a
+                                        href="#">Youtube</a></li>
+                                <li><span class="pe-4"><img src="images/Twitter  svg.png" alt="Twitter-logo"></span><a
+                                        href="#">Twitter</a></li>
+                                <li><span class="pe-4"><img src="images/LinkedIn svg.png" alt="Linkedin-logo"></span><a
+                                        href="#">Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-4 copyright">
+                    <div class="col-xl-6 col-lg-6 col-md-12 order-lg-1">
+                        <p class="float-lg-end copyright_para ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor
+                            incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 order-lg-0">
+                        <p class="copyright_name">© SMASH FACTOR </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- JS File -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+    <script src="js/script.js"></script>
+    <script src="js/memebership.js"></script>
+</body>
+
+</html>

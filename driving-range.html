@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="css/driving.css">
+
+    <title>Driving-range</title>
+</head>
+<body>
+<!-- Nav Bar Section -->
+    <div class="container-fluid nav_bar_container">
+        <div class="container">
+            <section class="main" id="main">
+                <header class="header">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <a class="navbar-brand" href="/smashfactor/"><img src="images/logo.png" alt="SF-Logo" width="" height="70px" class="d-inline-block align-text-top"></a>
+                            <button class="navbar-toggler collapsed toggle_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
+                                <span class="close"><img src="images/Close.png" alt="close"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-4 me-4 mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="/smashfactor/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/tee-time-booking.html">Tee time Booking</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/driving-range.html"> Simulators</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> Membership</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Login</a>
+                                </li>
+                                </ul>
+                                <div class="register-button mb-2 mb-lg-0 ">
+                                    <button onclick="window.location.href = '../register.html';" class="btn register-btn">Register</button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+            </section>
+        </div>
+    </div>
+
+<!-- Banner Section -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="slider_btn active" aria-current="true" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner banner_section">
+            <div class="carousel-item">
+                <img src="images/banner_image.png" class="d-block w-100 banner_image" alt="Driving Range Booking Banner Image">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner_image.png" class="d-block w-100 banner_image" alt="Driving Range Booking Banner Image">
+            </div>
+            <div class="carousel-item active">
+                <img src="images/banner_image.png" class="d-block w-100 banner_image" alt="Driving Range Booking Banner Image">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner_image.png" class="d-block w-100 banner_image" alt="Driving Range Booking Banner Image">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner_image.png" class="d-block w-100 banner_image" alt="Driving Range Booking Banner Image">
+            </div>
+        </div>
+    </div>
+<!-- Booking Section -->
+<div class="booking_section_div container-fluid">
+    <div class="container">
+        <div class="booking_category_buttons">
+            <button id="driving_range_btn" class="active" onclick="DrivingRange()">Driving Range</button>
+            <button id="semi_private_btn" onclick="SemiPrivate()">Semi-Private</button>
+            <button id="luxury_box_btn" onclick="LuxuryBox()">Luxury Box</button>
+        </div>
+    </div>
+    <section class="simulator-section">
+        <div class="container">
+            <div class="simulator-1" id="simulator-1">
+              <div class="simulator-content-div">
+                <div class="sim-para">
+                  <p id="booking_section_heading">Designed for golfer’s improvement, our range features Golfzon’s Driving Range Simulator, or GDR for short. The GDR simulator features a high-resolution dual camera sensor system which recognizes ball launch data such as speed, angle direction, and back/side spin rate. A swing motion camera captures the golfer’s swing from different angles so the golfer can playback and view his/her swing for analysis. GDR offers touch screen controls and pedal buttons.</p>
+                </div>
+              </div>
+              <div id="driving_image" class="simulator-image-div-1">
+                <img  src="images/driving-range.png" alt="drivingrange" class="simulator-image-1">
+              </div>
+            </div>
+            <div class="simulator" id="driving_section_second">
+              <div id="driving_image-second" class="simulator-image-div">
+                <img src="images/lux-img.png" alt="drivingrange" class="simulator-image">
+              </div>
+              <div class="simulator-content-div">
+                <div class="sim-para">
+                  <p id="booking_section_heading-second">GDR is focused on the enhancement and fun of golf practice. The driving center, field practice simulation, level testing, and challenge mode all add up to make golf practice more enjoyable. Golfers can also select one of 20 courses to play a round or select a specific shot and practice at a designated distance, perhaps practice the iconic Par 3, 7 th hole at Pebble Beach. Did we mention the GDR also has an adjustable automated tee and ball retrieval system for the golfer’s convenience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="container video" id="youtube-video-driving">
+        <iframe class="mobile" src="https://www.youtube.com/embed/wGm6x88vT6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="desktop" width="560" height="315" src="https://www.youtube.com/embed/wGm6x88vT6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="container video" id="youtube-video-semi">
+        <iframe class="mobile" src="https://www.youtube.com/embed/5Z2fUsAA0Qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="desktop" width="560" height="315" src="https://www.youtube.com/embed/5Z2fUsAA0Qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="container video" id="youtube-video-lux">
+        <iframe class="mobile" src="https://www.youtube.com/embed/CBT0BOyAJ5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="desktop" width="560" height="315" src="https://www.youtube.com/embed/CBT0BOyAJ5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="container select_date_div">
+        <div class="row select_date_section">
+            <div class="col-lg-6" style="padding: 0;">
+                <p class="select_date_heading">Select Date</p>
+                <div class="select_date_input_field">
+                    <input type="date" placeholder="Select Date" onchange="this.className=(this.value!=''?'date-has-value':'')"></input>
+                </div>
+            </div>
+            <div class="col-lg-6" style="padding: 0;">
+                <p class="select_date_heading">How many golfers?</p>
+                <div class="golfers_selection_div">
+                    <div class="plus_div golfers">
+                        <button class="minus">-</button>
+                    </div>
+                    <div class="number_div golfers">
+                        <p class="number">0</p>
+                    </div>
+                    <div class="minus_div golfers"> 
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tee_time_section">
+        <div class="container">
+            <p class="tee_time_heading">Tee time</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 div_1">
+                    <p>Early Birdie</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 div_1_column_1" style="padding: 0;">
+                            <button class="time_div">
+                                10:00 AM
+                            </button>
+                            <button class="time_div">
+                                12:00 PM
+                            </button>
+                            <button class="time_div">
+                                02:00 PM
+                            </button>
+                            <button class="time_div">
+                                04:00 PM
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 div_1_column_2" style="padding: 0;">
+                            <button class="time_div">
+                                11:00 AM
+                            </button>
+                            <button class="time_div">
+                                01:00 PM
+                            </button>
+                            <button class="time_div">
+                                03:00 PM
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 div_2">
+                    <p>Twilight</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 div_2_column_1" style="padding: 0;">
+                            <button class="time_div">
+                                05:00 PM
+                            </button>
+                            <button class="time_div">
+                                07:00 PM
+                            </button>
+                            <button class="time_div">
+                                09:00 PM
+                            </button>
+                            <button id="tooltip" class="time_div" style="background-color: #DFF2E5;">
+                                11:00 PM
+                                <!-- ToolTip Hover Effect -->
+                                <!-- <span id="tooltipText">Unavailable for booking due to 
+                                    facility maintenance and cleaning</span> -->
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 div_2_column_2" style="padding: 0;">
+                            <button class="time_div">
+                                06:00 PM
+                            </button>
+                            <button class="time_div">
+                                08:00 PM
+                            </button>
+                            <button class="time_div">
+                                10:00 PM
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 div_3">
+                    <p class="div_3_after_hours">After hours</p>
+                    <p class="div_3_members_only">Available for members only</p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 div_3_column_1" style="padding: 0;">
+                            <button id="tooltip" class="time_div">
+                                12:00 AM
+                            </button>
+                            <button id="tooltip" class="time_div">
+                                02:00 AM
+                            </button>
+                            <button id="tooltip" class="time_div">
+                                04:00 AM
+                            </button>
+                            <button id="tooltip" class="time_div">
+                                06:00 AM
+                            </button>
+                            <button id="tooltip" class="time_div">
+                                08:00 AM
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 div_3_column_2">
+                            <button id="tooltip" class="time_div">
+                                01:00 AM
+                            </button>
+                            <button id="tooltip" class="time_div">
+                                03:00 AM
+                            </button>
+                            <button id="tooltip" class="time_div">
+                                05:00 AM
+                            </button>
+                            <button id="tooltip" class="time_div">
+                                07:00 AM
+                            </button>
+                            <button id="tooltip" class="time_div">
+                                09:00 AM
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="book_now_div">
+        <button class="tee_book_now_button">Book Now</button>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <div class="footer_section">
+            <footer class="footer">
+              <div class="container pt-0">
+                <div class="row gx-5">
+                  <div class="col-xl-3 col-lg-3 col-md-6 mt-0 footer-logo">
+                    <div class="p-0 site-logo">
+                      <img class="img-fluid" src="images/Footer-logo.png" alt="footer-logo">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-1">
+                    <div class="quicklinks mb-3">
+                      <h6 class=" footer-heading">QUICK LINKS</h6>
+                    </div>
+                    <div class=" footer-list">
+                      <ul>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Escape Rooms</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="  col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-2">
+                    <div class="events mb-3">
+                      <h6 class="text-uppercase footer-heading">Events</h6>
+                    </div>
+                    <div class="footer-list private-party-desktop">
+                      <ul>
+                        <li><a href="#">Birthday Party</a></li>
+                        <li><a href="#">Bar Mitzvah Party</a></li>
+                        <li><a href="#">Team Building</a></li>
+                        <li><a href="#">Private Party</a></li>
+                      </ul>
+                    </div>
+                    <div class="footer-list private-party-mobile">
+                        <div class="row">
+                            <div class="col-6">
+                                <p><a href="#">Birthday Party</a></p>
+                                <p><a href="#">Bar Mitzvah Party</a></p>
+                            </div>
+                            <div class="col-4">
+                                <p><a href="#">Team Building</a></p>
+                                <p><a href="#">Private Party</a></p>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="  col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-3">
+                    <div class="follow mb-3">
+                      <h6 class="text-uppercase footer-heading">Follow us</h6>
+                    </div>
+                    <div class="footer-list">
+                      <ul>
+                        <li><span class="pe-4"><img src="images/fb-logo.png" alt="fb-logo"></span><a href="#">Facebook</a></li>
+                        <li><span class="pe-4"><img src="images/Instagram svg.png" alt="Insta-logo"></span><a
+                            href="#">Instagram</a></li>
+                        <li><span class="pe-4"><img src="images/youtube-logo.png" alt="youtube-logo"></span><a
+                            href="#">Youtube</a></li>
+                        <li><span class="pe-4"><img src="images/Twitter  svg.png" alt="Twitter-logo"></span><a
+                            href="#">Twitter</a></li>
+                        <li><span class="pe-4"><img src="images/LinkedIn svg.png" alt="Linkedin-logo"></span><a
+                            href="#">Linkedin</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="row pb-4 copyright">
+                  <div class="col-xl-6 col-lg-6 col-md-12 order-lg-1">
+                    <p class="float-lg-end copyright_para ">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et
+                      dolore magna aliqua.
+                    </p>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-12 order-lg-0">
+                    <p class="copyright_name">© SMASH FACTOR </p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+    </div>
+    <!-- JS Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/driving.js"></script>
+</body>
+</html>

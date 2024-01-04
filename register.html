@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+
+  <!--Bootstrap link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+  <!-- Technology Section Link -->
+
+  <!-- Css Link -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <link rel ='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+
+</head>
+<body>
+  <section class="main" id="main">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg p-0">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="SF-Logo" width="" height="70px" class="d-inline-block align-text-top"></a>
+          <button class="navbar-toggler collapsed toggle_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
+            <span class="close"><img src="images/Close.png" alt="close"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-4 me-4 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tee-time-booking/index.html">Tee time Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Driving-range/driving-range.html"> Simulators</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Membership</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+            </ul>
+            <div class="register-button mb-2 mb-lg-0 ">
+              <button class="btn register-btn">Register</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </section>
+  <section>
+    <div class="container">
+         <div class="row justify-content-center">
+           <div class="col-md-4 col-lg-4 p-0">
+             <p class="login-para">If you are already registered user please login here</p>
+           </div>
+           <div class="col-md-4 col-lg-4"></div>
+         </div>
+    </div>
+    <div class="container register mt-3">
+      <div class="row gap-5 justify-content-center">
+        <div class="col-12 col-md-4 col-lg-4 log-in">
+                <form name="login" class="form">
+                    <h4>Login Here</h4>
+                    <div class="input-control">
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Email Address" required>
+                    </div>
+                    <div class="login-password input-control">
+                      <input type="password" name="loginpassword"  class="input-field" placeholder="Password" autocomplete="login-password" required="" id="login_password">
+                      <i class="far fa-eye" id="loginPasswords" style="margin-left: -30px; cursor: pointer;"></i>
+                  </div>
+                    <div class="input-control">
+                        <input class="log_in_btn " type="submit">
+                    </div>
+                    <hr>
+                    <div class="new-member">
+                        <p>New member ? | </p>
+                        <a href="#" class="text text-links">&nbspForgot Password</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 signup">
+                <form name="register" class="form">
+                    <h4>Create Account</h4>
+                    <div class="input-control">
+                        <label for="fname" class="input-label" hidden>First Name</label>
+                        <input type="text" id="fname" class="input-field"  name="fname" placeholder="First Name"  required>
+                    </div>
+                    <div class="input-control">
+                        <label for="lname" class="input-label" hidden > Last Name</label>
+                        <input type="text" id="lname" class="input-field"  name="lname" placeholder="Last Name" required>
+                    </div>
+                    <div class="input-control">
+                        <input  type="tel" id="phone" name="phone" onkeypress="phoneno()"  class="form-control input-field" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-control email">
+                        <label for="email" class="input-label" hidden>Email Address</label>
+                        <input type="email" name="email" class="input-field" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="password input-control">
+                        <input type="password" name="password" class="input-field" placeholder="Password" autocomplete="current-password" required="" id="id_password">
+                        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                    </div>
+                    <div class="conform-password input-control">
+                        <input type="password" name="conformpassword"  class="input-field" placeholder="Conform Password" autocomplete="conform-password" required="" id="conform_password">
+                        <i class="far fa-eye" id="conformPasswords" style="margin-left: -30px; cursor: pointer;"></i>
+                    </div>
+                    <div class="input-control">
+                        <input class="log_in_btn " type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Footer section -->
+  <section>
+    <footer class="footer">
+      <div class="container pt-0">
+        <div class="row gx-5">
+          <div class="col-xl-3 col-lg-3 col-md-6 mt-0 footer-logo">
+            <div class="p-0 site-logo">
+              <img class="img-fluid" src="images/Footer-logo.png" alt="footer-logo">
+            </div>
+          </div>
+          <div class="col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-1">
+            <div class="quicklinks mb-3">
+              <h6 class=" footer-heading">QUICK LINKS</h6>
+            </div>
+            <div class=" footer-list">
+              <ul>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Escape Rooms</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Gift Cards</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="  col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-2">
+            <div class="events mb-3">
+              <h6 class="text-uppercase footer-heading">Events</h6>
+            </div>
+            <div class="footer-list private-party-desktop">
+              <ul>
+                <li><a href="#">Birthday Party</a></li>
+                <li><a href="#">Bar Mitzvah Party</a></li>
+                <li><a href="#">Team Building</a></li>
+                <li><a href="#">Private Party</a></li>
+              </ul>
+            </div>
+            <div class="footer-list private-party-mobile">
+                <div class="row">
+                    <div class="col-6">
+                        <p><a href="#">Birthday Party</a></p>
+                        <p><a href="#">Bar Mitzvah Party</a></p>
+                    </div>
+                    <div class="col-4">
+                        <p><a href="#">Team Building</a></p>
+                        <p><a href="#">Private Party</a></p>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="  col-lg-3 col-xl-3 col-md-6 mb-4 footer-item footer-item-3">
+            <div class="follow mb-3">
+              <h6 class="text-uppercase footer-heading">Follow us</h6>
+            </div>
+            <div class="footer-list">
+              <ul>
+                <li><span class="pe-4"><img src="images/fb-logo.png" alt="fb-logo"></span><a href="#">Facebook</a></li>
+                <li><span class="pe-4"><img src="images/Instagram svg.png" alt="Insta-logo"></span><a
+                    href="#">Instagram</a></li>
+                <li><span class="pe-4"><img src="images/youtube-logo.png" alt="youtube-logo"></span><a
+                    href="#">Youtube</a></li>
+                <li><span class="pe-4"><img src="images/Twitter  svg.png" alt="Twitter-logo"></span><a
+                    href="#">Twitter</a></li>
+                <li><span class="pe-4"><img src="images/LinkedIn svg.png" alt="Linkedin-logo"></span><a
+                    href="#">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row pb-4 copyright">
+          <div class="col-xl-6 col-lg-6 col-md-12 order-lg-1">
+            <p class="float-lg-end copyright_para ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 order-lg-0">
+            <p class="copyright_name">© SMASH FACTOR </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- JS Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>        
+    function phoneno(){          
+     $('#phone').keypress(function(e) {
+         var a = [];
+         var k = e.which;
+
+         for (i = 48; i < 58; i++)
+             a.push(i);
+
+         if (!(a.indexOf(k)>=0))
+             e.preventDefault();
+     });
+ }
+</script>
+
+</body>
+</html>
